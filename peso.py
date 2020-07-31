@@ -7,16 +7,16 @@ menu = """
                                bienvenido a peso en otro planeta
            aqui podras averiguar cuanto pesas en cualquier planeta del sistema solar
 
-1. mercurio
-2. venus
-3. tierra
-4. marte 
-5. jupiter
-6. saturno 
-7. urano
-8. neptuno
-9. pluton
-
+                                 🌖      1. mercurio        🚀         👾        🌛
+     💫           🌏                    2. venus                    ☄️     ☀️
+                             👾          3. tierra       🌝                          🌙
+                    🌒                  4. marte                       ⭐️
+     ⭐️     🛸                  🚀      5. jupiter       🛸      ✨ 
+                           ☀️             6. saturno                             🌑
+             ✨                         7. urano               ☀️             
+     ☄️                   🛰               8. neptuno     💫         🌎      🛰       
+               🌛                🌑     9. pluton                                 ☄️  
+                                                                🌒          🛸          🛰
 escoge un planeta para averiguar tu peso: """
 
 opcion = int(input(menu))
