@@ -1,21 +1,22 @@
-def mensaje():                       
+def mensaje():       # este mensaje se imprimira cuando el usuario salga del programa               
     print("\n\n\t\t\t\t¡adios! 👊🏽")
     print("\n\n")
 
-def menu():
-    menu = """       
+def menu():  # este es el menu principal del programa
+    menu = """        
                                 bienvenido a peso en otro planeta
            aqui podras averiguar cuanto pesas en cualquier planeta del sistema solar
 
-                                 🌖      1. mercurio        🚀         👾        🌛
+                                 🌖     1. mercurio        🚀         👾        🌛
      💫           🌏                    2. venus                    ☄️     ☀️
-                             👾          3. tierra       🌝                          🌙
+                             👾         3. tierra       🌝                          🌙
                     🌒                  4. marte                       ⭐️
      ⭐️     🛸                  🚀      5. jupiter       🛸      ✨ 
-                           ☀️             6. saturno                             🌑
+                           ☀️            6. saturno                             🌑
              ✨                         7. urano               ☀️                       💫
-     ☄️                   🛰               8. neptuno     💫         🌎      🛰       
-               🌛                🌑     9. pluton                                 ☄️  
+     ☄️                   🛰             8. neptuno     💫         🌎      🛰       
+               🌛                🌑     9. pluton
+                                        10. salir                                 ☄️  
                                                                 🌒          🛸          🛰
 
     🚀 """
@@ -39,7 +40,11 @@ def main():
     opcion =0 
     while opcion != 10:
         menu()    
-        opcion = int(input('\n\nselecciona una opcion: '))       # inicio condicionales para validar la opcion escogida por el usuario
+        try:
+            opcion = int(input('\n\nselecciona una opcion: '))      
+        except ValueError: # esta en una excepcion en caso de que el usuario digite una letra o un caracter diferente
+            print(' ')
+ # inicio condicionales para validar la opcion escogida por el usuario
         if opcion == 1:
             operacion(3.7,'mercurio')
         elif opcion == 2:
