@@ -4,7 +4,7 @@ def mensaje():       # este mensaje se imprimira cuando el usuario salga del pro
 
 def menu():  # este es el menu principal del programa
     menu = """        
-                                bienvenido a peso en otro planeta
+                                bienvenidos a peso en otro planeta
            aqui podras averiguar cuanto pesas en cualquier planeta del sistema solar
 
                                  🌖     1. mercurio        🚀         👾        🌛
