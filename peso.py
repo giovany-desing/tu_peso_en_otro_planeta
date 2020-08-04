@@ -22,18 +22,25 @@ def menu():  # este es el menu principal del programa
     🚀 """
     print(menu)
 
-def operacion(gravedad,planeta):# esta es la funcion que cambia el peso digitador el usuario a el peso del planeta que el mismo usuario escogio
+def operacion(gravedad,planeta): # esta es la funcion que cambia el peso digitador el usuario a el peso del planeta que el mismo usuario escogio
     gravedad_terrestre = 9.8
-    print(f'\nescogiste {planeta} 💥')
-    peso_int = float(input("\n¿cuanto pesas? "))
-    if peso_int > 0 and peso_int < 150:
-       peso = (peso_int * gravedad)/gravedad_terrestre
-       peso = str(round(peso, 2))
-       print("\n\n¡G E N I A L!  tu peso en este planeta es de "+peso+" kg es increible no? 🚀")
-       print("\n\n\n")
-    else:
-        print("🤦‍♂️ ¡N O O ! 😩 ese peso no es valido, intenta otra vez")
-        print("\n\n\n")
+    print(f'\nestas {planeta} 💥')
+
+    while True:
+        try:
+            peso_int = float(input("\n¿cuanto pesas? "))
+            if peso_int > 0:
+                peso = (peso_int * gravedad)/gravedad_terrestre
+                peso = str(round(peso, 2))
+                print("\n\n¡G E N I A L!  tu peso en este planeta es de "+peso+" kg es increible no? 🚀")
+                print("\n\n\n")
+                break
+            else:
+                print("🤦‍♂️ ¡N O O ! 😩 ese peso no es valido, intenta otra vez")
+                print("\n\n\n")
+        except ValueError:
+            print("🤦‍♂️ ¡N O O ! 😩 ese peso no es valido, intenta otra vez")
+            print("\n\n\n")
 # fin de la funcion
 
 def main():
